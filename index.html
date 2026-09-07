@@ -50,8 +50,6 @@ body{background:#000;color:#fff;font-family:system-ui,Segoe UI,Roboto}
 <div style="margin-top:24px">
 <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:900;letter-spacing:.15em;font-size:12px;color:#00D4FF">PATROCINADORES</div><button id="addSponsorBtn" style="display:none;background:rgba(0,212,255,.15);border:1px solid #00D4FF;color:#00D4FF;padding:4px 10px;border-radius:20px;font-size:11px">+ Adicionar</button></div>
 <div id="sponsors" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px"></div>
-<div style="margin-top:8px;font-size:10px;opacity:.4;text-align:center">Segure logo K 3s + PIN 6039 para gerenciar</div>
-</div>
 <div style="margin-top:24px;display:grid;gap:10px">
 <a href="https://wa.me/5588992476039" style="background:#25D366;color:#000;text-decoration:none;padding:12px;border-radius:30px;text-align:center;font-weight:800;font-size:13px;display:block">WhatsApp 88 99247-6039</a>
 <a href="https://instagram.com/franklimcarvalho.ok" style="background:#fff;color:#000;text-decoration:none;padding:12px;border-radius:30px;text-align:center;font-weight:800;font-size:13px;display:block">Instagram @franklimcarvalho.ok</a>
@@ -71,7 +69,6 @@ const LOGO_NZ='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0
 const DEFAULT_SPONSORS=[
 {name:'ESC CURSOS',handle:'esccursos',desc:'Cursos Profissionalizantes',logo:LOGO_ESC,noLink:false},
 {name:'NZ INFORMÁTICA',handle:'',desc:'Informática e Tecnologia',logo:LOGO_NZ,noLink:true}
-{name:'ANUNCIE AQUI',handle:'',desc:'Seu anúncio aqui - 88 99247-6039',logo:LOGO_ANUNCIE,noLink:false}
 ];
 let isPlaying=false,delay=parseInt(localStorage.getItem('rk_delay')||'22'),pendingMeta=null,countdownTimer=null,pendingCountdown=0,isAdmin=sessionStorage.getItem('rk_admin')==='1';
 document.getElementById('delay').value=delay;document.getElementById('delayVal').textContent=delay;
